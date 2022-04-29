@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    transition: all 300ms;
+    margin: 0;
+    padding: 0;
+  }
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%)
+}
+
+.container {
+  padding: 0.7em 1em;
+  width: 25vw;
+  background-color: #202630;
+  border-radius: 20px;
+  margin-top: 3em;
+}
+.container > * {
+  margin-bottom: 1.3em;
+}
+.star {
+  margin-bottom: 2em;
+  background-color: var(--Very-Dark-Blue);
+  width: 2.5em;
+  height: 2.5em;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.6em;
+  border-radius: 20px;
+}
+p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+}
+h1 {
+  color: var(--White);
+}
+ul {
+  color: var(--Light-Grey);
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+ul li {
+    color: var(--Light-Grey);
+    background-color: var(--Dark-Blue);
+    padding: 1.2em 1.6em;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  li:hover {
+    background-color: var(--Orange);
+    transition: all 200ms;
+    color: var(--White);
+  }
+button {
+  width: 100%;
+  border: none;
+  background-color: var();
+  padding: 0.7em;
+  border-radius: 20px;
+  background-color:var(--Orange);
+  cursor: pointer;
+  color: white;
+
+  letter-spacing: 1px;
+  font-size: 13px;
+
+}
+
+button:hover {
+  background-color: var(--Light-Grey);
+  transition: all 300ms;
+}
+
+
+.thankwrapper {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  padding: 0.7em 1em;
+  width: 25vw;
+  background-color: var(--Dark-Blue);
+  border-radius: 20px;
+  margin-top: 3em;
+  display: none;
+}
+.thankwrapper > * {
+  margin-bottom: 1.3em;
+ 
+}
+
+h2 {
+    
+  color: var(--White);
+}
+#result {
+  background-color: var(--Very-Dark-Blue);
+  padding: 3px;
+  border-radius: 20px;
+  width: 22vw;
+  font-size: 15px;
+  color: var(--Orange);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+     
+     width: 300px;
+     
+        
+      }
+   
+  }
+  @media only screen and (max-width: 1200px) {
+    .container {
+     
+        width: 500px;
+        
+        
+      }
+     
+  }
